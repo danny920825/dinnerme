@@ -46,6 +46,7 @@ class Login extends Component {
         const data = {user : this.state.username, pass: this.state.password}
         const url = "http://127.0.0.1:3001"
         const api_call = await Axios.post(url,data)
+        console.log(api_call)
         } catch (error) {
           console.log(error.message)
         }
